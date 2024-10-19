@@ -1,7 +1,7 @@
 //nodemailer library para enviar correos de forma sencilla. npm install nodemailer
 const nodemailer = require('nodemailer');
 const config = require('../../config');
-const path = require('path');
+
 //NPM INSTALL googleapis por si se necesita renovar el access token, pero no es necesario en este caso.
 
 // const { google } = require('googleapis');
