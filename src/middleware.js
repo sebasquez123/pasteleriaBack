@@ -8,7 +8,7 @@ const ratelimit = require('express-rate-limit');
 
 const limiter = ratelimit({
     windowMs: 15 * 60 * 1000, // cada 15 minutos
-    max: 50 // 100 peticiones 
+    max: 200 // 100 peticiones 
 });
 
 app.use(limiter);

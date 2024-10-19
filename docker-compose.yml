@@ -1,13 +1,13 @@
-version: '3.8'
-services:
-  mongo:
-    #contenedor con  persistencia de datos
-    image: mongo:latest
-    container_name: Mongo_pasteleria_Alicia
-    ports:
-      - "27018:27017" # Conectar al puerto Mongo por defecto si no se tiene mongodb localmente
-    volumes:
-      - ./mongo-data:/data/db # Persistir datos en un volumen local
+# version: '3.8'
+# services:
+#   mongo:
+#     #contenedor con  persistencia de datos
+#     image: mongo:latest
+#     container_name: Mongo_pasteleria_Alicia
+#     ports:
+#       - "27018:27017" # Conectar al puerto Mongo por defecto si no se tiene mongodb localmente
+#     volumes:
+#       - ./mongo-data:/data/db # Persistir datos en un volumen local
 
 # environment:
 #   MONGO_INITDB_ROOT_USERNAME: root # Usuario root para MongoDB
@@ -28,3 +28,5 @@ services:
 # ME_CONFIG_MONGODB_AUTH_DATABASE: admin
 # ME_CONFIG_BASICAUTH_USERNAME: yourNewUsername
 # ME_CONFIG_BASICAUTH_PASSWORD: yourNewPassword
+
+

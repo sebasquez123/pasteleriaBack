@@ -22,8 +22,4 @@ module.exports = {
     refreshToken: process.env.OAUTH_REFRESH_TOKEN,
 
     accessToken: process.env.OAUTH_ACCESS_TOKEN,
-
-    openAiApiKey: process.env.API_KEY,
-    
-    openiaorganization: process.env.OPEN_AI_ORGANIZATION_ID
 };

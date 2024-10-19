@@ -8,7 +8,7 @@ async function respuesta (pregunta,contexto, count_espera)
         const dialogo = pregunta.trim();
     
         try {
-            const solicitudchat = await Client.connect("sebasqz/macmotusSpace");
+            const solicitudchat = await Client.connect("sebasqz/PasteleriaAliciaSpace");
             const result = await solicitudchat.predict("/chat", { message: dialogo });
 
             // console.log(response.data);
