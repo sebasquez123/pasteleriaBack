@@ -46,21 +46,14 @@ class SendMail{
            
             const toAdmin= {
                 from: config.user,
-                to: "sebastianvasqz12@gmail.com",
+                to: config.user,
                 subject: 'UN NUEVO CONTACTO CON TU WEB.',
-                text: `HOLA! Te habla tu aplicacion. Has recibido un mensaje.\n ${name} ha hecho contacto con tu equipo!...\n Esto es lo que recibiste:\n correo: ${to}\n tel: ${tel} \n mensaje: ${comment}`
+                text: `HOLA! Te habla tu aplicacion. Has recibido un mensaje.\n ${name} ha hecho contacto con Pasteleria Alicia!...\n Esto es lo que recibiste:\n `,
+                html:`<h3>correo: </h3>${to}\n<h3>telefono: </h3>${tel}\n <h3>mensaje: </h3>${comment}`
         }
-        
-            const toWife= {
-                    from: config.user,
-                    to: "j.duarte@utp.edu.co",
-                    subject: 'UN NUEVO CONTACTO CON TU WEB.',
-                    text: `HOLA! Te habla tu aplicacion. Has recibido un mensaje.\n ${name} ha hecho contacto con tu equipo!...\n Esto es lo que recibiste:\n correo: ${to}\n tel: ${tel} \n mensaje: ${comment}`
-                }
         
         try { 
             await this.transporter.sendMail(toUser);
-            await this.transporter.sendMail(toWife);
             return await this.transporter.sendMail(toAdmin);
             
         }
